@@ -22,7 +22,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+run the generator to install
+
+    $ rails g petergate_api:install
 
 ## Development
 
