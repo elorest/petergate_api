@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-run the generator to install
+run the generator to install (You must have a devise user model)
 
     $ rails g petergate_api:install
 
