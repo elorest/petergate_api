@@ -14,7 +14,7 @@ module PetergateApi
       end
 
       def add_to_gemfile
-        gem "apipie"
+        gem "apipie-rails"
       end
 
       def insert_into_user_model
