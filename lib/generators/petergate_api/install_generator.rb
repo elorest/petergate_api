@@ -15,6 +15,7 @@ module PetergateApi
 
       def add_to_gemfile
         gem "apipie-rails"
+        gem "jwt"
       end
 
       def insert_into_user_model
