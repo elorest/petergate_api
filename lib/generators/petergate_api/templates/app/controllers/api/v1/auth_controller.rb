@@ -12,7 +12,7 @@ class Api::V1::AuthController < Api::BaseController
   }"
   def create
     if params[:email] && (@user = User.find_by_email(params[:email])) && @user.valid_password?(auth_params[:password])
-      connection = @user.api_connections.create  
+      connection = @user.api_connections.create
       render json: {id: @user.id, auth_token: connection.token, email: @user.email}.to_json, status: :ok
     else
       render status: :unauthorized, nothing: true

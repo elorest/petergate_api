@@ -40,6 +40,10 @@ module PetergateApi
         run "cp -rf #{self.class.source_root}/app/ app/"
       end
 
+      def copy_lib
+        run "cp -rf #{self.class.source_root}/lib/ lib/"
+      end
+
       def copy_initializers
         run "cp -rf #{self.class.source_root}/initializers config/"
       end
